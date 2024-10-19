@@ -232,7 +232,23 @@ user_pref("layout.word_select.eat_space_to_next_word", false);
 // visit https://github.com/yokoffing/Betterfox/wiki/Common-Overrides
 // visit https://github.com/yokoffing/Betterfox/wiki/Optional-Hardening
 // Enter your personal overrides below this line:
+user_pref("browser.newtabpage.activity-stream.feeds.topsites", true);
+user_pref("browser.newtabpage.activity-stream.default.sites", "");
+user_pref("browser.newtabpage.activity-stream.showSponsoredTopSites", false); // Sponsored shortcuts 
+user_pref("browser.newtabpage.activity-stream.feeds.section.topstories", false); // Recommended by Pocket
+user_pref("browser.newtabpage.activity-stream.showSponsored", false); // Sponsored Stories
+user_pref("browser.newtabpage.pinned", '[{"url":"https://forge.my.id/apps/files/files","label":"Nextcloud","baseDomain":"forge.my.id"},{"url":"https://photo.forge.my.id/photos","label":"Immich","baseDomain":"photo.forge.my.id"},{"url":"http://192.168.1.112:9091/transmission/web/","label":"Transmission","baseDomain":"192.168.1.112"},{"url":"http://192.168.1.112:9999/","label":"Stash","baseDomain":"192.168.1.112"},{"url":"https://dionysus.tail6df9ef.ts.net:9090/","label":"Cockpit"},{"url":"https://dionysus.tail6df9ef.ts.net:9443/","label":"Portainer"},{"url":"http://dionysus.tail6df9ef.ts.net:8082/","label":"Redlib","baseDomain":"dionysus.tail6df9ef.ts.net"},{"url":"http://192.168.1.1/cgi-bin/luci/","label":"OpenWRT","baseDomain":"192.168.1.1"},{"url":"https://github.com","label":"GitHub","baseDomain":"github.com"},{"url":"https://www.youtube.com/","label":"YouTube","baseDomain":"www.youtube.com"},{"url":"https://www.reddit.com","label":"Reddit","baseDomain":"www.reddit.com"},{"url":"https://sw.senecapolytechnic.ca/student/login.htm","label":"Works","baseDomain":"sw.senecapolytechnic.ca"},{"url":"https://learn.senecapolytechnic.ca/ultra","label":"Learn","baseDomain":"learn.senecapolytechnic.ca"},{"url":"https://studenterp.senecapolytechnic.ca/psp/ps/?cmd=start","label":"Home","baseDomain":"studenterp.senecapolytechnic.ca"},{"url":"http://mail.proton.me/","label":"Proton","baseDomain":"mail.proton.me"},{"url":"https://app.tuta.com/","label":"Tuta","baseDomain":"app.tuta.com"}]');
 
+user_pref("signon.rememberSignons", false);
+user_pref("extensions.formautofill.addresses.enabled", false);
+user_pref("extensions.formautofill.creditCards.enabled", false);
+user_pref("dom.security.https_only_mode", true);
+user_pref("dom.security.https_only_mode_error_page_user_suggestions", true);
+user_pref("security.cert_pinning.enforcement_level", 2);
+
+user_pref("privacy.userContext.enabled", true);
+user_pref("media.hardware-video-decoding.force-enabled", true);
+user_pref("media.ffmpeg.vaapi.enabled", true);
 /****************************************************************************
  * SECTION: SMOOTHFOX                                                       *
 ****************************************************************************/

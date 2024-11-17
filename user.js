@@ -181,7 +181,6 @@ user_pref("browser.tabs.tabmanager.enabled", false);
 user_pref("browser.profiles.enabled", true);
 
 /** THEME ADJUSTMENTS ***/
-user_pref("toolkit.legacyUserProfileCustomizations.stylesheets", true);
 user_pref("browser.compactmode.show", true);
 user_pref("browser.display.focus_ring_on_anything", true);
 user_pref("browser.display.focus_ring_style", 0);
@@ -234,10 +233,12 @@ user_pref("layout.word_select.eat_space_to_next_word", false);
 // Enter your personal overrides below this line:
 user_pref("browser.newtabpage.activity-stream.feeds.topsites", true);
 user_pref("browser.newtabpage.activity-stream.default.sites", "");
+user_pref("browser.newtabpage.activity-stream.topSitesRows", 2);
 user_pref("browser.newtabpage.activity-stream.showSponsoredTopSites", false); // Sponsored shortcuts 
-user_pref("browser.newtabpage.activity-stream.feeds.section.topstories", false); // Recommended by Pocket
 user_pref("browser.newtabpage.activity-stream.showSponsored", false); // Sponsored Stories
-user_pref("browser.newtabpage.pinned", '[{"url":"https://forge.my.id/apps/files/files","label":"Nextcloud","baseDomain":"forge.my.id"},{"url":"https://photo.forge.my.id/photos","label":"Immich","baseDomain":"photo.forge.my.id"},{"url":"http://192.168.1.112:9091/transmission/web/","label":"Transmission","baseDomain":"192.168.1.112"},{"url":"http://192.168.1.112:9999/","label":"Stash","baseDomain":"192.168.1.112"},{"url":"https://dionysus.tail6df9ef.ts.net:9090/","label":"Cockpit"},{"url":"https://dionysus.tail6df9ef.ts.net:9443/","label":"Portainer"},{"url":"http://dionysus.tail6df9ef.ts.net:8082/","label":"Redlib","baseDomain":"dionysus.tail6df9ef.ts.net"},{"url":"http://192.168.1.1/cgi-bin/luci/","label":"OpenWRT","baseDomain":"192.168.1.1"},{"url":"https://github.com","label":"GitHub","baseDomain":"github.com"},{"url":"https://www.youtube.com/","label":"YouTube","baseDomain":"www.youtube.com"},{"url":"https://www.reddit.com","label":"Reddit","baseDomain":"www.reddit.com"},{"url":"https://sw.senecapolytechnic.ca/student/login.htm","label":"Works","baseDomain":"sw.senecapolytechnic.ca"},{"url":"https://learn.senecapolytechnic.ca/ultra","label":"Learn","baseDomain":"learn.senecapolytechnic.ca"},{"url":"https://studenterp.senecapolytechnic.ca/psp/ps/?cmd=start","label":"Home","baseDomain":"studenterp.senecapolytechnic.ca"},{"url":"http://mail.proton.me/","label":"Proton","baseDomain":"mail.proton.me"},{"url":"https://app.tuta.com/","label":"Tuta","baseDomain":"app.tuta.com"}]');
+user_pref("browser.newtabpage.activity-stream.showWeather", true);
+
+user_pref("browser.newtabpage.pinned", '[{"url":"https://forge.my.id/","label":"Forge","baseDomain":"forge.my.id"}, {"url":"https://cloud.forge.my.id/apps/files/files","label":"Nextcloud","baseDomain":"forge.my.id"},{"url":"https://photo.forge.my.id/photos","label":"Immich","baseDomain":"photo.forge.my.id"},{"url":"http://dionysus.home.arpa:9091/transmission/web/","label":"Transmission","baseDomain":"dionysus.home.arpa"},{"url":"http://dionysus.home.arpa:9999/","label":"Stash","baseDomain":"dionysus.home.arpa"},{"url":"https://dionysus.home.arpa:9090/","label":"Cockpit"},{"url":"https://dionysus.home.arpa:9443/","label":"Portainer"},{"url":"http://charon.home.arpa/cgi-bin/luci/","label":"OpenWRT","baseDomain":"charon.home.arpa"},{"url":"https://github.com","label":"GitHub","baseDomain":"github.com"},{"url":"https://www.youtube.com/","label":"YouTube","baseDomain":"www.youtube.com"},{"url":"https://www.reddit.com","label":"Reddit","baseDomain":"www.reddit.com"},{"url":"https://sw.senecapolytechnic.ca/student/login.htm","label":"Works","baseDomain":"sw.senecapolytechnic.ca"},{"url":"https://learn.senecapolytechnic.ca/ultra","label":"Learn","baseDomain":"learn.senecapolytechnic.ca"},{"url":"https://studenterp.senecapolytechnic.ca/psp/ps/?cmd=start","label":"Home","baseDomain":"studenterp.senecapolytechnic.ca"},{"url":"http://mail.proton.me/","label":"Proton","baseDomain":"mail.proton.me"},{"url":"https://app.tuta.com/","label":"Tuta","baseDomain":"app.tuta.com"}]');
 
 user_pref("signon.rememberSignons", false);
 user_pref("extensions.formautofill.addresses.enabled", false);
@@ -258,3 +259,23 @@ user_pref("media.ffmpeg.vaapi.enabled", true);
 /****************************************************************************
  * END: BETTERFOX                                                           *
 ****************************************************************************/
+
+/* user.js
+ * https://github.com/rafaelmardojai/firefox-gnome-theme/
+ */
+
+// Enable customChrome.css
+
+// Set UI density to normal
+
+// Enable SVG context-propertes
+
+// Disable private window dark theme
+
+// Enable rounded bottom window corners
+
+user_pref("toolkit.legacyUserProfileCustomizations.stylesheets", true);
+user_pref("browser.uidensity", 0);
+user_pref("svg.context-properties.content.enabled", true);
+user_pref("browser.theme.dark-private-windows", false);
+user_pref("widget.gtk.rounded-bottom-corners.enabled", true);
